@@ -1,9 +1,9 @@
-import Hero from "./Home/Hero.tsx";
+import Header from "./Home/Header.tsx";
 export default function Home() {
     return (
         <div>
 
-            <Hero />
+            <Header />
 
         </div>
     );
