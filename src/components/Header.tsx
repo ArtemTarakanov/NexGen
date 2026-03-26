@@ -1,7 +1,6 @@
 import {useState} from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
-
-
+import { Link } from 'react-router-dom';
 
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false);
@@ -20,13 +19,13 @@ export default function Header(){
                 </svg>
 
                 <ul className = "font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#81807E] flex flex-row items-center gap-3.5 max-md:hidden">
-                    <a className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110" href="#">Home</a>
-                    <a className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110" href="#">Services</a>
+                    <Link to="/" className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110">Home</Link>
+                    <Link to="/services" className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110">Services</Link>
                     <a className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110" href="#">Projects</a>
                     <a className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110" href="#">About</a>
                     <a className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110" href="#">Careers</a>
                     <a className = "bg-[#0F0F0F] px-5 py-3 rounded-xl transition-transform duration-200 hover:scale-110" href="#">Blogs</a>
-                    
+
                     <button className = "bg-[#CE7D63] px-5 py-3 rounded-lg transition-transform duration-200 hover:scale-110">
                         <a className="font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#0F0F0F]" href="#">Contact Us</a>
                     </button>
