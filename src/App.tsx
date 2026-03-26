@@ -6,17 +6,10 @@ import Services from "./pages/Services.tsx";
 function App() {
 
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-      </Routes>
-
-      <Routes>
-        <Route path="/services" element={<Services/>}/>
-      </Routes>
-
-
-    </>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/services" element={<Services/>}/>
+    </Routes>
   )
 }
 
