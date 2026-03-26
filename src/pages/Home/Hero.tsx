@@ -44,7 +44,7 @@ export default function Hero(){
                                 <h1 className = "font-['Roboto_Flex'] font-semibold text-[58px] max-md:text-[34px] leading-[150%] tracking-[0%] uppercase text-[#F9EFEC]">Digital Solutions</h1>
 
                                 <svg
-                                    className="h-14.5 max-md:hidden"
+                                    className="h-14.5 max-md:hidden transition-transform duration-300 hover:scale-110"
                                     width="220" height="77" viewBox="0 0 266 77" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="12" y="13" width="52" height="52" rx="26" fill="#CE7D63"/>
                                     <path d="M39.5 31.5L47 39M47 39L39.5 46.5M47 39H29" stroke="#0F0F0F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -101,7 +101,7 @@ export default function Hero(){
                     </div>
 
                     <svg
-                        className="absolute top-2 right-0"
+                        className="absolute top-2 right-0 transition-transform duration-300 hover:scale-110"
                         width="85" height="100" viewBox="0 0 85 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="25" y="14.3931" width="60" height="60" rx="30" fill="#CE7D63"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M48.75 30.6431L67.5 30.6431C67.8315 30.6431 68.1495 30.7748 68.3839 31.0092C68.6183 31.2436 68.75 31.5615 68.75 31.8931V50.6431C68.75 51.3334 68.1904 51.8931 67.5 51.8931C66.8096 51.8931 66.25 51.3334 66.25 50.6431V34.9108L43.3839 57.777C42.8957 58.2651 42.1043 58.2651 41.6161 57.777C41.128 57.2888 41.128 56.4973 41.6161 56.0092L64.4822 33.1431L48.75 33.1431C48.0596 33.1431 47.5 32.5834 47.5 31.8931C47.5 31.2027 48.0596 30.6431 48.75 30.6431Z" fill="#0F0F0F"/>
