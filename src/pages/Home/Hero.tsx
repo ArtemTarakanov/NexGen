@@ -28,12 +28,13 @@ export default function Hero(){
     ]
 
     return (
-        <section className = "bg-[#0F0F0F] h-full px-10 max-md:px-4 pb-10 flex items-center flex-col gap-4">
+        <section className="bg-[#0F0F0F] h-full px-10 max-md:px-4 pb-10 flex items-center flex-col gap-4">
 
+            <div className="w-full max-w-[1450px] flex flex-col gap-4">
 
-            <div className="flex flex-row justify-around w-full gap-10">
+            <div className="flex flex-row justify-between w-full gap-4 max-md:flex-col">
                 {/*Главный + пикча*/}
-                <div className = "flex flex-col bg-[#191919] w-223 max-md:w-full px-15 max-md:px-6 pt-20 max-md:pt-7.5 pb-4 max-md:pb-4 rounded-xl">
+                <div className="flex flex-col bg-[#191919] flex-1 max-md:w-full px-15 max-md:px-6 pt-20 max-md:pt-7.5 pb-4 rounded-xl overflow-hidden">
                     <div className = "flex flex-col gap-5 max-md:gap-3">
 
                         {/*Заголовок*/}
@@ -74,7 +75,7 @@ export default function Hero(){
 
                     <div className="w-full mt-10">
                         <div className="overflow-hidden bg-[#0F0F0F] py-4 rounded-[10px]">
-                            <div className="flex items-center gap-6 whitespace-nowrap text-[#676665] font-['Roboto_Mono'] font-normal text-sm animate-marquee">
+                            <div className="flex items-center  gap-6 whitespace-nowrap text-[#676665] font-['Roboto_Mono'] font-normal text-sm animate-marquee">
                                 {Array.from({ length: 2 }, (_, i) =>
                                     ["Digital Marketing", "Website Design", "Branding", "Website Development", "Mobile App Development"].map((item, j) => (
                                         <span key={`${i}-${j}`} className="flex items-center gap-6">
@@ -109,16 +110,19 @@ export default function Hero(){
 
                 </div>
             </div>
-            <div className = "max-md:overflow-x-auto max-md:scrollbarWidth: 'none', msOverflowStyle: 'none' w-full">
-                <div className="flex flex-row gap-9 border border-[#1F1F1F] p-2.5 rounded-2xl max-md:w-max max-md:gap-x-6">
+            <div className="max-md:overflow-x-auto w-full">
+                <div className="flex justify-center flex-row gap-9 border border-[#1F1F1F] p-2.5 rounded-2xl max-md:w-max max-md:gap-x-6">
                     {cards.map((item, index) => (
                         <div key={index} className="flex flex-col items-center justify-center gap-1 bg-[#191919] px-4 py-3 rounded-xl w-50 transition-transform duration-200 hover:scale-105 max-md:flex-shrink-0 max-md:w-64">
-                            <h3 className = "font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#B3B3B2]">{item.title}</h3>
+                            <h3 className="font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#B3B3B2]">{item.title}</h3>
                             <span className="font-['Roboto_Flex'] font-semibold text-[40px] leading-none tracking-[0%] text-[#DA9E8B]">{item.coast}</span>
                         </div>
                     ))}
                 </div>
             </div>
+
+            </div>{/* конец max-w обёртки */}
+
         </section>
     );
 }
