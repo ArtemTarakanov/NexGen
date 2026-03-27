@@ -24,7 +24,7 @@ export default function Reasons(){
     ]
 
     return(
-        <section className = "flex items-center justify-center px-10 max-md:px-4 py-10 max-md:py-3 bg-[#0F0F0F]">
+        <section className = "flex items-center justify-center px-10 max-md:px-4 py-10 max-md:py-3 bg-[#0F0F0F] h-full">
 
             {/*ГлАвНыЙ*/}
             <div className = "flex flex-col items-center gap-2.5 border-2 border-[#1F1F1F] p-2.5 rounded-[20px]">
