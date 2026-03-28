@@ -41,7 +41,7 @@ export default function Services(){
                 <div className = "max-md:overflow-x-auto w-full">
                     <div className = " w-full grid grid-cols-2 gap-2.5 max-md:flex max-md:w-max max-md:gap-x-6">
                         {cards.map((item, index) => (
-                            <div key={index} className="bg-[#191919] p-15 max-md:pt-6 max-md:px-7 max-md:pb-6 rounded-[14px] flex flex-col gap-8 max-md:gap-5 max-md:shrink-0">
+                            <div key={index} className="bg-[#191919] p-15 max-md:pt-6 max-md:px-7 max-md:pb-6 rounded-[14px] flex flex-col gap-8 max-md:gap-5 max-md:shrink-0 transition-transform duration-300 hover:scale-102">
                                 <div className = "flex flex-row w-full">
                                     <span className = "flex items-center w-full justify-between ">
 
