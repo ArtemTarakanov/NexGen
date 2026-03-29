@@ -60,14 +60,14 @@ export default function Work(){
     ]
 
     return(
-        <section className = "h-full bg-[#0F0F0F] flex items-center justify-center p-10 max-md:px-4 max-md:py-3">
+        <section className = "h-full bg-[#0F0F0F] flex items-center justify-center p-10 max-lg:p-6 max-md:px-4 max-md:py-3">
 
             {/*Main*/}
             <div className = "flex flex-col gap-2.5 w-full max-md:border-2 max-md:border-[#1F1F1F] max-md:rounded-[20px] max-md:p-2.5">
 
                 {/*Heading*/}
-                <div className = "bg-[#191919] py-11 max-md:px-6 px-10 max-md:py-6 rounded-[14px] flex flex-row justify-between max-md:justify-start items-center ">
-                    <h1 className = "font-['Roboto_Flex'] font-semibold text-[38px] max-md:text-[28px] leading-[100%] tracking-[0%] uppercase text-[#F9EFEC]">Our Works</h1>
+                <div className = "bg-[#191919] py-11 max-lg:py-8 max-md:px-6 px-10 max-lg:px-8 max-md:py-6 rounded-[14px] flex flex-row justify-between max-md:justify-start items-center ">
+                    <h1 className = "font-['Roboto_Flex'] font-semibold text-[38px] max-lg:text-[32px] max-md:text-[28px] leading-[100%] tracking-[0%] uppercase text-[#F9EFEC]">Our Works</h1>
                     <span className = "flex flex-row items-center gap-2 max-md:hidden">
                         <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" fill="#1F1F1F"/><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" stroke="#262626"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.875 19.125L32.25 19.125C32.4158 19.125 32.5747 19.1908 32.6919 19.3081C32.8092 19.4253 32.875 19.5842 32.875 19.75V29.125C32.875 29.4702 32.5952 29.75 32.25 29.75C31.9048 29.75 31.625 29.4702 31.625 29.125V21.2589L20.1919 32.6919C19.9479 32.936 19.5521 32.936 19.3081 32.6919C19.064 32.4479 19.064 32.0521 19.3081 31.8081L30.7411 20.375L22.875 20.375C22.5298 20.375 22.25 20.0952 22.25 19.75C22.25 19.4048 22.5298 19.125 22.875 19.125Z" fill="#E7BEB1"/></svg>
                         <h3 className = "font-['Roboto_Flex'] font-normal text-base max-md:text-sm leading-[150%] tracking-[0%] text-[#B3B3B2] uppercase">ALL Works</h3>
@@ -80,62 +80,62 @@ export default function Work(){
                     {/*Card*/}
                     <div className = "flex flex-col gap-2.5 w-full ">
                         {cards.map((item, index)=>(
-                            <div key={index} className="flex flex-row max-md:flex max-md:flex-col border-2 border-[#1F1F1F] rounded-[20px] p-2.5 gap-2.5 max-md:gap-0 ">
-                                <div className="flex flex-col px-7.5 max-md:px-6 py-12.5 max-md:py-6 bg-[#191919] rounded-[14px] gap-7.5 max-md:gap-5 transition-transform duration-300 hover:scale-102 max-md:order-2 max-md:rounded-t-none">
+                            <div key={index} className="flex flex-row max-lg:flex-col max-md:flex-col border-2 border-[#1F1F1F] rounded-[20px] p-2.5 gap-2.5 max-md:gap-0 min-[1920px]:gap-4">
+                                <div className="flex flex-col px-7.5 max-xl:px-6 max-lg:px-5 max-md:px-6 min-[1920px]:px-12 py-12.5 max-xl:py-10 max-lg:py-8 max-md:py-6 min-[1920px]:py-16 bg-[#191919] rounded-[14px] gap-7.5 max-xl:gap-6 max-lg:gap-5 max-md:gap-5 min-[1920px]:gap-10 transition-transform duration-300 hover:scale-102 max-lg:order-2 max-md:order-2 max-lg:rounded-t-none max-md:rounded-t-none">
 
                                     {/*Icon + Heading*/}
-                                    <span className = "flex flex-row gap-4">
-                                        <div className = "flex flex-row items-center gap-2.5">
-                                            <span>{item.icon}</span>
-                                            <h2 className = "font-['Roboto_Flex'] font-medium text-lg max-md:text-base leading-[150%] tracking-[0%] uppercase text-[#F9EFEC]">{item.title}</h2>
+                                    <span className = "flex flex-row gap-4 max-xl:gap-3 max-lg:gap-2 min-[1920px]:gap-6">
+                                        <div className = "flex flex-row items-center gap-2.5 max-xl:gap-2 max-lg:gap-2 min-[1920px]:gap-4">
+                                            <span className="max-xl:scale-95 max-lg:scale-90 min-[1920px]:scale-110">{item.icon}</span>
+                                            <h2 className = "font-['Roboto_Flex'] font-medium text-lg max-xl:text-[17px] max-lg:text-base max-md:text-base min-[1920px]:text-[22px] leading-[150%] tracking-[0%] uppercase text-[#F9EFEC]">{item.title}</h2>
                                         </div>
 
-                                        <span className = "flex flex-row items-center gap-2 max-md:hidden">
-                                            <svg width="36" height="36" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" fill="#1F1F1F"/><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" stroke="#262626"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.875 19.125L32.25 19.125C32.4158 19.125 32.5747 19.1908 32.6919 19.3081C32.8092 19.4253 32.875 19.5842 32.875 19.75V29.125C32.875 29.4702 32.5952 29.75 32.25 29.75C31.9048 29.75 31.625 29.4702 31.625 29.125V21.2589L20.1919 32.6919C19.9479 32.936 19.5521 32.936 19.3081 32.6919C19.064 32.4479 19.064 32.0521 19.3081 31.8081L30.7411 20.375L22.875 20.375C22.5298 20.375 22.25 20.0952 22.25 19.75C22.25 19.4048 22.5298 19.125 22.875 19.125Z" fill="#E7BEB1"/></svg>
+                                        <span className = "flex flex-row items-center gap-2 max-lg:hidden max-md:hidden min-[1920px]:gap-3">
+                                            <svg width="36" height="36" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-[1920px]:w-[44px] min-[1920px]:h-[44px]"><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" fill="#1F1F1F"/><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" stroke="#262626"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.875 19.125L32.25 19.125C32.4158 19.125 32.5747 19.1908 32.6919 19.3081C32.8092 19.4253 32.875 19.5842 32.875 19.75V29.125C32.875 29.4702 32.5952 29.75 32.25 29.75C31.9048 29.75 31.625 29.4702 31.625 29.125V21.2589L20.1919 32.6919C19.9479 32.936 19.5521 32.936 19.3081 32.6919C19.064 32.4479 19.064 32.0521 19.3081 31.8081L30.7411 20.375L22.875 20.375C22.5298 20.375 22.25 20.0952 22.25 19.75C22.25 19.4048 22.5298 19.125 22.875 19.125Z" fill="#E7BEB1"/></svg>
 
-                                            <h3 className = "font-['Roboto_Flex'] font-normal text-base max-md:text-sm leading-[150%] tracking-[0%] text-[#B3B3B2] uppercase">Details</h3>
+                                            <h3 className = "font-['Roboto_Flex'] font-normal text-base max-xl:text-sm max-lg:text-sm max-md:text-sm min-[1920px]:text-lg leading-[150%] tracking-[0%] text-[#B3B3B2] uppercase">Details</h3>
                                         </span>
                                     </span>
 
                                     {/*Category + Time Taken*/}
-                                    <div className = "flex flex-col gap-2.5 ">
+                                    <div className = "flex flex-col gap-2.5 max-xl:gap-2 min-[1920px]:gap-3">
 
                                         {/*Categoty*/}
-                                        <div className="py-2 max-md:py-1.5 px-4 max-md:px-2.5 bg-[#1F1F1F] rounded-[45px] inline-flex flex-row items-center gap-1.5 w-fit transition-transform duration-300 hover:scale-110 max-md:whitespace-nowrap">
-                                                <p className="font-['Roboto_Flex'] font-normal text-sm max-md:text-xs leading-[150%] tracking-[0%] text-[#B3B3B2]">Category</p>
-                                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
-                                                <p className="font-['Roboto_Flex'] font-medium text-sm max-md:text-xs leading-[150%] tracking-[0%] text-[#E6E6E6] ">{item.category}</p>
+                                        <div className="py-2 max-xl:py-1.5 max-md:py-1.5 min-[1920px]:py-2.5 px-4 max-xl:px-3 max-md:px-2.5 min-[1920px]:px-5 bg-[#1F1F1F] rounded-[45px] inline-flex flex-row items-center gap-1.5 min-[1920px]:gap-2 w-fit transition-transform duration-300 hover:scale-110 max-md:whitespace-nowrap">
+                                                <p className="font-['Roboto_Flex'] font-normal text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#B3B3B2] whitespace-nowrap">Category</p>
+                                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-[1920px]:w-[5px] min-[1920px]:h-[5px]"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
+                                                <p className="font-['Roboto_Flex'] font-medium text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#E6E6E6] whitespace-nowrap">{item.category}</p>
                                         </div>
 
                                         {/*Time*/}
-                                        <div className="py-2 max-md:py-1.5 px-4 max-md:px-2.5 bg-[#1F1F1F] rounded-[45px] inline-flex flex-row items-center gap-1.5 w-fit transition-transform duration-300 hover:scale-110">
-                                                <p className="font-['Roboto_Flex'] font-normal text-sm max-md:text-xs leading-[150%] tracking-[0%] text-[#B3B3B2]">Time Taken</p>
-                                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
-                                                <p className="font-['Roboto_Flex'] font-medium text-sm max-md:text-xs leading-[150%] tracking-[0%] text-[#E6E6E6]">{item.time}</p>
+                                        <div className="py-2 max-xl:py-1.5 max-md:py-1.5 min-[1920px]:py-2.5 px-4 max-xl:px-3 max-md:px-2.5 min-[1920px]:px-5 bg-[#1F1F1F] rounded-[45px] inline-flex flex-row items-center gap-1.5 min-[1920px]:gap-2 w-fit transition-transform duration-300 hover:scale-110">
+                                                <p className="font-['Roboto_Flex'] font-normal text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#B3B3B2] whitespace-nowrap">Time Taken</p>
+                                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-[1920px]:w-[5px] min-[1920px]:h-[5px]"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
+                                                <p className="font-['Roboto_Flex'] font-medium text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#E6E6E6] whitespace-nowrap">{item.time}</p>
                                         </div>
                                     </div>
 
                                     {/*Description*/}
 
-                                    <p className = "max-w-95 font-['Roboto_Flex'] font-normal max-md:text-sm text-base leading-[150%] tracking-[0%] text-[#B3B3B2]">{item.description}</p>
+                                    <p className = "max-w-95 min-[1920px]:max-w-[500px] font-['Roboto_Flex'] font-normal text-base max-xl:text-sm max-lg:text-sm max-md:text-sm min-[1920px]:text-lg leading-[150%] tracking-[0%] text-[#B3B3B2]">{item.description}</p>
 
                                 </div>
 
                                 {/*Image*/}
-                                <img src={item.image} alt="image" className="max-w-110 max-md:w-full h-auto max-md:max-h-46 rounded-[14px] transition-transform duration-300 hover:scale-102 max-md:order-1 max-md:object-cover max-md:rounded-b-none"/>
+                                <img src={item.image} alt="image" className="max-w-110 max-xl:max-w-90 max-lg:w-full max-md:w-full min-[1920px]:max-w-[500px] h-auto max-lg:max-h-60 max-md:max-h-46 rounded-[14px] transition-transform duration-300 hover:scale-102 max-lg:order-1 max-md:order-1 max-lg:object-cover max-md:object-cover max-lg:rounded-b-none max-md:rounded-b-none"/>
 
 
                                 {/*Technologies & Team Members*/}
-                                <div className="flex flex-col gap-2.5 justify-center flex-1 max-md:hidden">
+                                <div className="flex flex-col gap-2.5 min-[1920px]:gap-4 justify-center flex-1 max-lg:hidden max-md:hidden">
 
                                     {/*Technologies*/}
-                                    <div className="flex flex-col p-7.5 rounded-[10px] bg-[#191919] gap-4 w-full transition-transform duration-300 hover:scale-102">
-                                        <h2 className = "font-['Roboto_Flex'] font-medium text-base leading-[150%] tracking-[0%] uppercase text-[#FFFFFF]">Technologies Used</h2>
+                                    <div className="flex flex-col p-7.5 max-xl:p-6 max-lg:p-5 min-[1920px]:p-10 rounded-[10px] bg-[#191919] gap-4 max-xl:gap-3 max-lg:gap-3 min-[1920px]:gap-5 w-full transition-transform duration-300 hover:scale-102">
+                                        <h2 className = "font-['Roboto_Flex'] font-medium text-base max-xl:text-sm max-lg:text-sm min-[1920px]:text-lg leading-[150%] tracking-[0%] uppercase text-[#FFFFFF]">Technologies Used</h2>
 
-                                        <div className = "grid grid-cols-3 gap-2">
+                                        <div className = "grid grid-cols-3 max-xl:grid-cols-2 max-lg:grid-cols-2 gap-2 max-xl:gap-1.5 min-[1920px]:gap-3">
                                             {item.tecnologies.map((tecnology) => (
-                                                <div key={tecnology} className = "bg-[#1F1F1F] flex items-center justify-center rounded-[45px] px-3.5 py-2 transition-transform duration-300 hover:scale-108">
-                                                    <p className = "font-['Roboto_Mono'] font-normal text-sm leading-[150%] tracking-[0%] text-[#E6E6E6]">{tecnology}</p>
+                                                <div key={tecnology} className = "bg-[#1F1F1F] flex items-center justify-center rounded-[45px] px-3.5 max-xl:px-2.5 max-lg:px-2.5 min-[1920px]:px-5 py-2 max-xl:py-1.5 max-lg:py-1.5 min-[1920px]:py-2.5 transition-transform duration-300 hover:scale-108">
+                                                    <p className = "font-['Roboto_Mono'] font-normal text-sm max-xl:text-xs max-lg:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#E6E6E6]">{tecnology}</p>
                                                 </div>
                                             ))}
                                         </div>
@@ -143,21 +143,21 @@ export default function Work(){
                                     </div>
 
                                     {/*Team Members*/}
-                                    <div className="flex flex-row gap-7.5 bg-[#191919] items-center p-7.5 rounded-[10px] w-full transition-transform duration-300 hover:scale-102">
-                                        <p className="font-['Roboto_Flex'] font-medium text-base leading-[150%] tracking-[0%] uppercase text-[#FFFFFF]">Team Members</p>
+                                    <div className="flex flex-row gap-7.5 max-xl:gap-5 max-lg:gap-4 min-[1920px]:gap-10 bg-[#191919] items-center p-7.5 max-xl:p-6 max-lg:p-5 min-[1920px]:p-10 rounded-[10px] w-full transition-transform duration-300 hover:scale-102">
+                                        <p className="font-['Roboto_Flex'] font-medium text-base max-xl:text-sm max-lg:text-sm min-[1920px]:text-lg leading-[150%] tracking-[0%] uppercase text-[#FFFFFF]">Team Members</p>
 
-                                        <div className = "flex flex-row gap-2">
+                                        <div className = "flex flex-row gap-2 max-xl:gap-1.5 max-lg:gap-1.5 min-[1920px]:gap-3">
                                             {item.team.map((team) => (
 
-                                                <img src={team} alt="team" className="w-10 h-10  bg-[#E7BEB1] rounded-full object-cover transition-transform duration-300 hover:scale-125"/>
+                                                <img src={team} alt="team" className="w-10 h-10 max-xl:w-9 max-xl:h-9 max-lg:w-8 max-lg:h-8 min-[1920px]:w-12 min-[1920px]:h-12 bg-[#E7BEB1] rounded-full object-cover transition-transform duration-300 hover:scale-125"/>
                                             ))}
                                         </div>
 
 
                                     </div>
 
-                                    <button className = "bg-[#CE7D63] px-44 py-3.5 rounded-lg transition-transform duration-300 hover:scale-103">
-                                        <a href="#" className = "font-['Roboto_Flex'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#0F0F0F]">Book A Call</a>
+                                    <button className = "bg-[#CE7D63] px-44 max-xl:px-28 max-lg:px-20 min-[1920px]:px-52 py-3.5 max-xl:py-3 max-lg:py-3 min-[1920px]:py-4 rounded-lg transition-transform duration-300 hover:scale-103">
+                                        <a href="#" className = "font-['Roboto_Flex'] font-medium text-sm max-xl:text-xs max-lg:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] uppercase text-[#0F0F0F]">Book A Call</a>
                                     </button>
 
                                 </div>
