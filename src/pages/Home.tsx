@@ -3,6 +3,7 @@ import Hero from "./Home/Hero.tsx";
 import Reasons from "./Home/Reasons.tsx";
 import Services from "./Home/Services.tsx";
 import Work from "./Home/Work.tsx";
+import Testimonials from "./Home/Testimonials.tsx";
 export default function Home() {
     return (
         <div>
@@ -12,6 +13,7 @@ export default function Home() {
             <Reasons/>
             <Services/>
             <Work/>
+            <Testimonials/>
         </div>
     );
 }
