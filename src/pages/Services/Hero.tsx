@@ -3,7 +3,7 @@ export default function Hero(){
         <section className="bg-[#0F0F0F] flex items-center justify-around px-10 py-10 max-sm:px-4 max-sm:py-5 gap-3 max-sm:flex-col max-sm:pt-1">
             <div className="bg-[#191919] w-auto gap-4 rounded-2xl flex flex-col pt-[88px] max-sm:pt-[26px] max-sm:w-full">
                 <div className="flex flex-col justify-center px-12 max-sm:px-6 ">
-                    <div className="flex flex-col ">
+                    <div className="flex flex-col">
 
                         <div className="flex flex-row gap-1 items-center mb-1">
                             <h1 className="text-[#F9EFEC] font-['Roboto_Flex'] text-[58px] max-sm:text-[28px] font-semibold uppercase leading-none whitespace-nowrap">Our Comprehensive</h1>

@@ -84,8 +84,8 @@ export default function Ourservices(){
                     {/*Оформлена правая колонка*/}
                     <div className="grid grid-cols-1 rounded-2xl gap-2.5 w-full ">
                         {cards.map((item, index) => (
-                            <div className="bg-[#191919] rounded-2xl transform transition duration-300 ease-in-out hover:scale-102 px-[60px] max-sm:px-6 max-sm:flex max-sm:flex-col max-sm:gap-3 max-sm:py-6" key={index}>
-                                <div className="mt-[80px] mb-[40px] flex flex-row items-center justify-between max-sm:mt-0 max-sm:mb-0">
+                            <div className="bg-[#191919] rounded-2xl transform transition duration-300 ease-in-out hover:scale-102 px-15 max-sm:px-6 max-sm:flex max-sm:flex-col max-sm:gap-3 max-sm:py-6" key={index}>
+                                <div className="mt-20 mb-10 flex flex-row items-center justify-between max-sm:mt-0 max-sm:mb-0">
 
                                     <span className="flex flex-row gap-3 items-center ">
                                         <span className="">{item.icon}</span>
@@ -104,7 +104,7 @@ export default function Ourservices(){
                                 </div>
                                 </div>
 
-                                <div className="mb-[80px] h-[100px] flex flex-col justify-between relative max-sm:h-auto max-sm:mb-0 max-sm:flex-col-reverse max-sm:gap-2">
+                                <div className="mb-20 h-25 flex flex-col justify-between relative max-sm:h-auto max-sm:mb-0 max-sm:flex-col-reverse max-sm:gap-2">
                                     <p className="text-[#B3B3B2] font-['Roboto_Flex'] font-normal text-base self-start max-w-[80%] max-sm:max-w-full">{item.description}</p>
                                     <h2 className="font-['Roboto_Flex'] font-normal text-[#F9EFEC] text-[22px] self-end uppercase max-sm:self-start">{item.coast}</h2>
                                 </div>
@@ -138,7 +138,7 @@ export default function Ourservices(){
                                 {/*Фото*/}
                                 <div className="flex flex-row justify-center gap-2.5">
                                     <div className="relative rounded-2xl overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 flex-1">
-                                        <img className="w-full h-[220px] object-cover rounded-2xl border-2 border-[#333333]" src={item.image2} alt=""/>
+                                        <img className="w-full h-55 object-cover rounded-2xl border-2 border-[#333333]" src={item.image2} alt=""/>
                                         <div className="absolute bottom-4 left-4 flex items-center gap-3">
                                             <svg width="258" height="40" viewBox="0 0 258 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="20" fill="white"/>
@@ -148,7 +148,7 @@ export default function Ourservices(){
                                         </div>
                                     </div>
                                     <div className="relative rounded-2xl overflow-hidden transform transition duration-300 ease-in-out hover:scale-105 flex-1">
-                                        <img className="w-full h-[220px] object-cover rounded-2xl border-2 border-[#333333]" src={item.image1} alt=""/>
+                                        <img className="w-full h-55 object-cover rounded-2xl border-2 border-[#333333]" src={item.image1} alt=""/>
                                         <div className="absolute bottom-4 left-4 flex items-center gap-3">
                                             <svg width="258" height="40" viewBox="0 0 258 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="20" fill="white"/>
