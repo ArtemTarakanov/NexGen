@@ -29,7 +29,7 @@ export default function FAQ(){
                     <div className="flex flex-col gap-2.5 w-6/10 max-md:w-full">
 
                         {items.map((item, index) => (
-                            <div key={index} className="bg-[#191919] p-10 max-md:px-7 max-md:py-6 rounded-2xl flex flex-col relative overflow-hidden">
+                            <div onClick={() => toggleOpen(index)} key={index} className="bg-[#191919] p-10 max-md:px-7 max-md:py-6 rounded-2xl flex flex-col relative overflow-hidden">
 
                                 {/*Шапка*/}
                                 <div className="flex flex-row items-center justify-between ">
@@ -40,7 +40,7 @@ export default function FAQ(){
                                     </h2>
 
                                     {/*Button*/}
-                                    <button onClick={() => toggleOpen(index)}>
+                                    <button>
                                         <svg
                                             className={`transition-transform duration-300 ${isOpen === index ? 'rotate-180' : ''}`}
                                             xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white"
