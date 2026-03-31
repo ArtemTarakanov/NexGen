@@ -58,7 +58,7 @@ export default function Header(){
                     <ul className = "font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase flex flex-row items-center gap-3.5 max-md:hidden">
                         <Link to="/" className={getLinkClass('/')}>Home</Link>
                         <Link to="/services" className={getLinkClass('/services')}>Services</Link>
-                        <Link to="#" className={getLinkClass('#')}>Projects</Link>
+                        <Link to="/projects" className={getLinkClass('/projects')}>Projects</Link>
                         <Link to="#" className={getLinkClass('#')}>About</Link>
                         <Link to="#" className={getLinkClass('#')}>Careers</Link>
                         <Link to="#" className={getLinkClass('#')}>Blogs</Link>
@@ -91,7 +91,7 @@ export default function Header(){
                                 <ul className = "font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#81807E] grid grid-cols-2 items-center text-center gap-5 ">
                                     <Link to="/" className={getLinkClass('/')}>Home</Link>
                                     <Link to="/services" className={getLinkClass('/services')}>Services</Link>
-                                    <Link to="#" className={getLinkClass('#')}>Projects</Link>
+                                    <Link to="/projects" className={getLinkClass('/projects')}>Projects</Link>
                                     <Link to="#" className={getLinkClass('#')}>About</Link>
                                     <Link to="#" className={getLinkClass('#')}>Careers</Link>
                                     <Link to="#" className={getLinkClass('#')}>Blogs</Link>

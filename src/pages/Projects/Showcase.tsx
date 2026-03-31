@@ -1,4 +1,4 @@
-export default function Work(){
+export default function Showcase(){
 
     const cards = [
         {
@@ -67,7 +67,7 @@ export default function Work(){
 
                 {/*Heading*/}
                 <div className = "bg-[#191919] py-11 max-lg:py-8 max-md:px-6 px-10 max-lg:px-8 max-md:py-6 rounded-[14px] flex flex-row justify-between max-md:justify-start items-center ">
-                    <h1 className = "font-['Roboto_Flex'] font-semibold text-[38px] max-lg:text-[32px] max-md:text-[28px] leading-[100%] tracking-[0%] uppercase text-[#F9EFEC]">Projects Showcase</h1>
+                    <h1 className = "font-['Roboto_Flex'] font-semibold text-[38px] max-lg:text-[32px] max-md:text-[28px] leading-[100%] tracking-[0%] uppercase text-[#F9EFEC]">Our Works</h1>
                     <span className = "flex flex-row items-center gap-2 max-md:hidden">
                         <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" fill="#1F1F1F"/><rect x="0.5" y="0.5" width="51" height="51" rx="25.5" stroke="#262626"/><path fill-rule="evenodd" clip-rule="evenodd" d="M22.875 19.125L32.25 19.125C32.4158 19.125 32.5747 19.1908 32.6919 19.3081C32.8092 19.4253 32.875 19.5842 32.875 19.75V29.125C32.875 29.4702 32.5952 29.75 32.25 29.75C31.9048 29.75 31.625 29.4702 31.625 29.125V21.2589L20.1919 32.6919C19.9479 32.936 19.5521 32.936 19.3081 32.6919C19.064 32.4479 19.064 32.0521 19.3081 31.8081L30.7411 20.375L22.875 20.375C22.5298 20.375 22.25 20.0952 22.25 19.75C22.25 19.4048 22.5298 19.125 22.875 19.125Z" fill="#E7BEB1"/></svg>
                         <h3 className = "font-['Roboto_Flex'] font-normal text-base max-md:text-sm leading-[150%] tracking-[0%] text-[#B3B3B2] uppercase">ALL Works</h3>
@@ -102,16 +102,16 @@ export default function Work(){
 
                                         {/*Categoty*/}
                                         <div className="py-2 max-xl:py-1.5 max-md:py-1.5 min-[1920px]:py-2.5 px-4 max-xl:px-3 max-md:px-2.5 min-[1920px]:px-5 bg-[#1F1F1F] rounded-[45px] inline-flex flex-row items-center gap-1.5 min-[1920px]:gap-2 w-fit transition-transform duration-300 hover:scale-110 max-md:whitespace-nowrap">
-                                                <p className="font-['Roboto_Flex'] font-normal text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#B3B3B2] whitespace-nowrap">Category</p>
-                                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-[1920px]:w-[5px] min-[1920px]:h-[5px]"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
-                                                <p className="font-['Roboto_Flex'] font-medium text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#E6E6E6] whitespace-nowrap">{item.category}</p>
+                                            <p className="font-['Roboto_Flex'] font-normal text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#B3B3B2] whitespace-nowrap">Category</p>
+                                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-[1920px]:w-[5px] min-[1920px]:h-[5px]"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
+                                            <p className="font-['Roboto_Flex'] font-medium text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#E6E6E6] whitespace-nowrap">{item.category}</p>
                                         </div>
 
                                         {/*Time*/}
                                         <div className="py-2 max-xl:py-1.5 max-md:py-1.5 min-[1920px]:py-2.5 px-4 max-xl:px-3 max-md:px-2.5 min-[1920px]:px-5 bg-[#1F1F1F] rounded-[45px] inline-flex flex-row items-center gap-1.5 min-[1920px]:gap-2 w-fit transition-transform duration-300 hover:scale-110">
-                                                <p className="font-['Roboto_Flex'] font-normal text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#B3B3B2] whitespace-nowrap">Time Taken</p>
-                                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-[1920px]:w-[5px] min-[1920px]:h-[5px]"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
-                                                <p className="font-['Roboto_Flex'] font-medium text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#E6E6E6] whitespace-nowrap">{item.time}</p>
+                                            <p className="font-['Roboto_Flex'] font-normal text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#B3B3B2] whitespace-nowrap">Time Taken</p>
+                                            <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="min-[1920px]:w-[5px] min-[1920px]:h-[5px]"><circle cx="2" cy="2" r="2" fill="#CE7D63"/></svg>
+                                            <p className="font-['Roboto_Flex'] font-medium text-sm max-xl:text-xs max-md:text-xs min-[1920px]:text-base leading-[150%] tracking-[0%] text-[#E6E6E6] whitespace-nowrap">{item.time}</p>
                                         </div>
                                     </div>
 

@@ -114,9 +114,9 @@ export default function Footer(){
                 {/*Columns*/}
                     <div className = "bg-[#191919] grid grid-cols-4 max-md:grid-cols-2 gap-10 max-md:gap-7.5 p-10 max-md:p-6 rounded-2xl max-md:rounded-[14px] h-full w-full">
                         {cols.map((item, index) => (
-                            <div key={index} className = "flex flex-col gap-5 max-md:gap-4 max-md:items-center">
-                                <h2 className = "font-['Roboto_Mono'] font-bold text-[22px] max-md:text-sm leading-[100%] max-md:leading-[21px] tracking-[0%] text-[#F3DFD8] max-md:text-center">{item.title}</h2>
-                                <ul className = "flex flex-col gap-3.5 max-md:gap-2.5 font-['Roboto_Flex'] font-normal text-base max-md:text-xs leading-[150%] tracking-[0%] text-[#81807E] max-md:text-center">
+                            <div key={index} className = "flex flex-col gap-5 max-md:gap-4">
+                                <h2 className = "font-['Roboto_Mono'] font-bold text-[22px] max-md:text-sm leading-[100%] max-md:leading-[21px] tracking-[0%] text-[#F3DFD8]">{item.title}</h2>
+                                <ul className = "flex flex-col gap-3.5 max-md:gap-2.5 font-['Roboto_Flex'] font-normal text-base max-md:text-xs leading-[150%] tracking-[0%] text-[#81807E]">
                                     <li>{item.el1}</li>
                                     <li>{item.el2}</li>
                                     <li>{item.el3}</li>
