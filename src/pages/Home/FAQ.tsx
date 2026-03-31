@@ -29,13 +29,13 @@ export default function FAQ(){
                     <div className="flex flex-col gap-2.5 w-6/10 max-md:w-full">
 
                         {items.map((item, index) => (
-                            <div key={index} className="bg-[#191919] p-10 max-md:px-7.5 max-md:py-6 rounded-2xl flex flex-col relative overflow-hidden">
+                            <div key={index} className="bg-[#191919] p-10 max-md:px-7 max-md:py-6 rounded-2xl flex flex-col relative overflow-hidden">
 
                                 {/*Шапка*/}
-                                <div className="flex flex-row items-center justify-between mb-">
+                                <div className="flex flex-row items-center justify-between ">
 
                                     {/*Heading*/}
-                                    <h2 className="font-['Roboto_Flex'] font-medium text-xl max-md:text-lg leading-[100%] tracking-[0%] text-[#F9EFEC]">
+                                    <h2 className="font-['Roboto_Flex'] font-medium text-xl max-md:text-base max-md:text-lg leading-[100%] tracking-[0%] text-[#F9EFEC] max-md:max-w-60">
                                         {item.title}
                                     </h2>
 
