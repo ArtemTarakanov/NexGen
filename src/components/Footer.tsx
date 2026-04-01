@@ -149,7 +149,7 @@ export default function Footer(){
                     </div>
 
                     {/*Policy&&Terms*/}
-                    <div className = "bg-[#191919] p-10 max-md:p-6 flex flex-row max-md:flex-col items-center max-md:items-center justify-between max-md:justify-center rounded-2xl max-md:rounded-[14px] max-md:gap-5 max-md:hidden">
+                    <div className = "bg-[#191919] p-10 max-md:p-6 flex flex-row max-md:flex-col items-center max-md:items-center justify-between max-md:justify-center rounded-2xl max-md:rounded-[14px] max-md:gap-5">
 
                         <p className="font-['Roboto_Mono'] font-normal text-sm leading-[150%] tracking-[0%] text-[#B3B3B2] max-md:text-center">© 2024 NextGen. All rights reserved.</p>
 

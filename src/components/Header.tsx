@@ -60,7 +60,7 @@ export default function Header(){
                         <Link to="/services" className={getLinkClass('/services')}>Services</Link>
                         <Link to="/projects" className={getLinkClass('/projects')}>Projects</Link>
                         <Link to="#" className={getLinkClass('#')}>About</Link>
-                        <Link to="#" className={getLinkClass('#')}>Careers</Link>
+                        <Link to="/careers" className={getLinkClass('/careers')}>Careers</Link>
                         <Link to="#" className={getLinkClass('#')}>Blogs</Link>
 
                         <button className = "bg-[#CE7D63] px-5 py-3 rounded-lg transition-transform duration-200 hover:scale-110">
@@ -93,7 +93,7 @@ export default function Header(){
                                     <Link to="/services" className={getLinkClass('/services')}>Services</Link>
                                     <Link to="/projects" className={getLinkClass('/projects')}>Projects</Link>
                                     <Link to="#" className={getLinkClass('#')}>About</Link>
-                                    <Link to="#" className={getLinkClass('#')}>Careers</Link>
+                                    <Link to="/careers" className={getLinkClass('/careers')}>Careers</Link>
                                     <Link to="#" className={getLinkClass('#')}>Blogs</Link>
                                 </ul>
 

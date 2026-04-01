@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home.tsx';
 import Services from "./pages/Services.tsx";
 import Projects from "./pages/Projects.tsx";
+import Careers from "./pages/Careers.tsx";
 function App() {
 
   return (
@@ -10,6 +11,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/services" element={<Services/>}/>
       <Route path = "/projects" element={<Projects/>}/>
+      <Route path = "/careers" element = {<Careers/>}/>
     </Routes>
   )
 }
