@@ -1,4 +1,8 @@
+import {useState} from 'react'
+
 export default function join(){
+    const [showAll, setShowAll] = useState(false);
+
 
     const cards = [
         {
@@ -61,6 +65,7 @@ export default function join(){
             skills: 'Proficiency in SEO, SEM, and social media marketing, experience with analytics tools (Google Analytics, etc.), content marketing expertise.',
 
         },
+
     ]
 
 
@@ -69,23 +74,23 @@ export default function join(){
 
             <div className = "border-2 rounded-[20px] border-[#1F1F1F] p-2.5 flex flex-col gap-2.5">
                 {/*Heading*/}
-                <div className = "bg-[#191919] p-10 rounded-[14px] ">
-                    <h2 className = "font-['Roboto_Flex'] font-semibold text-[38px] leading-[100%] tracking-[0%] uppercase text-[#F9EFEC]">Join Our Team at NexGen</h2>
+                <div className = "bg-[#191919] p-10 max-md:p-6 rounded-[14px] ">
+                    <h2 className = "font-['Roboto_Flex'] font-semibold text-[38px] max-md:text-[28px] leading-[100%] tracking-[0%] uppercase text-[#F9EFEC]">Join Our Team at NexGen</h2>
                 </div>
 
 
                 {/*Cards*/}
-                <div className = "grid grid-cols-2 gap-2.5">
-                    {cards.map((item, index) => (
-                        <div key={index} className = "flex flex-col gap-7.5 p-10 bg-[#191919] rounded-xl">
+                <div className = "grid grid-cols-2 max-md:grid-cols-1 gap-2.5">
+                    {(showAll ? cards : cards.slice(0, 2)).map((item, index) => (
+                        <div key={index} className = "flex flex-col gap-7.5 max-md:gap-6 p-10 max-md:p-6 bg-[#191919] rounded-xl">
                             {/*Icon +Title + View Details*/}
                             <div className="flex flex-row justify-between items-center">
                                 <div className = "flex flex-row gap-2.5 items-center">
                                     <span>{item.icon}</span>
-                                    <h2 className = "font-['Roboto_Flex'] font-medium text-2xl leading-[150%] tracking-[0%] uppercase text-[#F9EFEC]">{item.title}</h2>
+                                    <h2 className = "font-['Roboto_Flex'] font-medium text-2xl max-md:text-xl leading-[150%] tracking-[0%] uppercase text-[#F9EFEC]">{item.title}</h2>
                                 </div>
 
-                                <div className = "flex flex-row gap-2 items-center">
+                                <div className = "flex flex-row gap-2 items-center max-md:hidden">
                                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" fill="#1F1F1F"/>
                                         <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#333333"/>
@@ -95,9 +100,75 @@ export default function join(){
                                     <p className = "font-['Roboto_Mono'] font-medium text-base leading-[150%] tracking-[0%] uppercase text-[#B3B3B2]">View Details</p>
                                 </div>
                             </div>
+
+                            {/*Salary + Exp + Deadline*/}
+                            <div className = "flex flex-wrap max-md:flex-col gap-2.5 max-md:gap-3">
+
+                                <div className = "flex flex-row gap-1.5 items-center whitespace-nowrap bg-[#1F1F1F] rounded-[45px] px-4 py-2">
+                                    <p className="font-['Roboto_Flex'] font-normal text-sm leading-[150%] tracking-[0%] text-[#B3B3B2]">Salary</p>
+
+                                    <svg className="shrink-0" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="2" cy="2" r="2" fill="#CE7D63"/>
+                                    </svg>
+
+                                    <p className = "font-['Roboto_Flex'] font-medium text-sm leading-[150%] tracking-[0%] text-[#E6E6E6]">{item.salary}</p>
+                                </div>
+
+                                <div className = "flex flex-row gap-1.5 items-center whitespace-nowrap bg-[#1F1F1F] rounded-[45px] px-4 py-2">
+                                    <p className="font-['Roboto_Flex'] font-normal text-sm leading-[150%] tracking-[0%] text-[#B3B3B2]">Experience</p>
+
+                                    <svg className="shrink-0" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="2" cy="2" r="2" fill="#CE7D63"/>
+                                    </svg>
+
+                                    <p className = "font-['Roboto_Flex'] font-medium text-sm leading-[150%] tracking-[0%] text-[#E6E6E6]">{item.experience}</p>
+                                </div>
+
+                                <div className = "flex flex-row gap-1.5 items-center whitespace-nowrap bg-[#1F1F1F] rounded-[45px] px-4 py-2">
+                                    <p className="font-['Roboto_Flex'] font-normal text-sm leading-[150%] tracking-[0%] text-[#B3B3B2]">Deadline</p>
+
+                                    <svg className="shrink-0" width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="2" cy="2" r="2" fill="#CE7D63"/>
+                                    </svg>
+
+                                    <p className = "font-['Roboto_Flex'] font-medium text-sm leading-[150%] tracking-[0%] text-[#E6E6E6]">{item.deadline}</p>
+                                </div>
+
+                            </div>
+
+                            {/*Skills*/}
+                            <div className = "flex flex-col gap-2">
+                                <h2 className = "font-['Roboto_Flex'] font-medium text-xl max-md:text-base leading-[150%] tracking-[0%] uppercase text-[#F9EFEC]">Skills</h2>
+                                <p className = "font-['Roboto_Flex'] font-normal text-base max-md:text-sm leading-[150%] tracking-[0%] text-[#B3B3B2] max-w-146">{item.skills}</p>
+                            </div>
+
+                            <div className = "flex flex-row gap-2 items-center md:hidden">
+                                <svg width="48" height="48" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" fill="#1F1F1F"/>
+                                    <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#333333"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M24.25 19.75L35.5 19.75C35.6989 19.75 35.8897 19.829 36.0303 19.9697C36.171 20.1103 36.25 20.3011 36.25 20.5V31.75C36.25 32.1642 35.9142 32.5 35.5 32.5C35.0858 32.5 34.75 32.1642 34.75 31.75V22.3107L21.0303 36.0303C20.7374 36.3232 20.2626 36.3232 19.9697 36.0303C19.6768 35.7374 19.6768 35.2626 19.9697 34.9697L33.6893 21.25L24.25 21.25C23.8358 21.25 23.5 20.9142 23.5 20.5C23.5 20.0858 23.8358 19.75 24.25 19.75Z" fill="#E7BEB1"/>
+                                </svg>
+
+                                <p className = "font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#B3B3B2]">View Details</p>
+                            </div>
+
+                            {/*Button*/}
+                            <button className = "bg-[#CE7D63] py-3.5 rounded-lg">
+                                <a href="#" className = "font-['Roboto_Flex'] font-medium text-sm leading-[150%] tracking-[0%] text-center uppercase text-[#0F0F0F]">Apply now</a>
+                            </button>
                         </div>
                     ))}
                 </div>
+                {!showAll && (
+                    <button
+                        onClick={() => setShowAll(true)}
+                        className="max-md:block hidden bg-[#1F1F1F] rounded-[45px] px-6 py-3 text-[#E6E6E6]"
+                    >
+
+                        <a href="#" className = "font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#B3B3B2]">View All</a>
+                    </button>
+                )}
+
             </div>
 
         </section>
