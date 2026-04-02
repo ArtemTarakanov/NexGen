@@ -162,7 +162,7 @@ export default function join(){
                 {!showAll && (
                     <button
                         onClick={() => setShowAll(true)}
-                        className="max-md:block hidden bg-[#1F1F1F] rounded-[45px] px-6 py-3 text-[#E6E6E6]"
+                        className="max-md:block hidden md:block hidden bg-[#1F1F1F] rounded-[45px] px-6 py-3 text-[#E6E6E6]"
                     >
 
                         <a href="#" className = "font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#B3B3B2]">View All</a>
