@@ -61,7 +61,7 @@ export default function Header(){
                         <Link to="/projects" className={getLinkClass('/projects')}>Projects</Link>
                         <Link to="#" className={getLinkClass('#')}>About</Link>
                         <Link to="/careers" className={getLinkClass('/careers')}>Careers</Link>
-                        <Link to="#" className={getLinkClass('#')}>Blogs</Link>
+                        <Link to="/blogs" className={getLinkClass('/blogs')}>Blogs</Link>
 
                         <button className = "bg-[#CE7D63] px-5 py-3 rounded-lg transition-transform duration-200 hover:scale-110">
                             <a className="font-['Roboto_Mono'] font-medium text-sm leading-[150%] tracking-[0%] uppercase text-[#0F0F0F]" href="#">Contact Us</a>
@@ -94,7 +94,7 @@ export default function Header(){
                                     <Link to="/projects" className={getLinkClass('/projects')}>Projects</Link>
                                     <Link to="#" className={getLinkClass('#')}>About</Link>
                                     <Link to="/careers" className={getLinkClass('/careers')}>Careers</Link>
-                                    <Link to="#" className={getLinkClass('#')}>Blogs</Link>
+                                    <Link to="/blogs" className={getLinkClass('/blogs')}>Blogs</Link>
                                 </ul>
 
                                 <button className = "bg-[#CE7D63] w-full px-5 py-3 rounded-lg  transition-transform duration-200 hover:scale-110">
