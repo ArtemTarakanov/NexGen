@@ -1,4 +1,8 @@
+import { button } from "framer-motion/client"
+import { useState } from "react"
+
 export default function Services(){
+    const [activeTabs, setActiveTabs] = useState<number[]>([1,1])
 
     const cards =[
         {
@@ -24,26 +28,51 @@ export default function Services(){
 
     const cards2 = [
         {
-            button_1:'Challenge',
-            button_2:'Solution',
-            button_3:'Results',
-            title:'Solution',
-            p:'Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.'
+            buttons: ['Challenge','Solution','Results'],
+            content: [
+                {
+                    title:'Challenge',
+                    p:'Klothink struggled with an outdated website that failed to convert visitors. Their checkout process was overly complex and the site performed poorly on mobile devices.'
+                },
+
+                {
+                    title:'Solution',
+                    p:'Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.'
+                },
+
+                {
+                    title:'Results',
+                    p:'After the redesign, Klothink saw a 45% increase in conversions, 60% improvement in mobile traffic retention, and a significant reduction in cart abandonment rate within the first 3 months.'
+                }
+            ]
+
         },
 
         {
-            button_1:'Challenge',
-            button_2:'Solution',
-            button_3:'Results',
-            title:'Solution',
-            p:'Leveraging our expertise in app development, we built an interactive mobile app with user-friendly features. The app allowed users to set personalized fitness goals, track their progress, and share achievements on social media platforms. Real-time data synchronization enabled users to access their data on multiple devices.'
+             buttons: ['Challenge','Solution','Results'],
+             content:[
+                {
+                    title: 'Challenge',
+                    p: 'The client needed a fitness app that could handle real-time data sync across multiple devices while keeping the interface simple and engaging for non-technical users.'
+                },
+
+                {
+                    title: 'Solution',
+                    p: 'Leveraging our expertise in app development, we built an interactive mobile app with user-friendly features. The app allowed users to set personalized fitness goals, track their progress, and share achievements on social media platforms. Real-time data synchronization enabled users to access their data on multiple devices.'
+                },
+
+                {
+                    title: 'Results',
+                    p: 'The app reached 10,000 downloads in the first month, maintained a 4.8 star rating on both App Store and Google Play, and achieved a 70% daily active user retention rate.'
+                }
+             ]
         }
     ]
 
 
 
     return (
-        <section className="bg-[#0F0F0F] h-full flex flex-col items-center px-12 max-md:px-4 py-10 max-md:py-2.5 gap-2.5">
+        <section className="bg-[#0F0F0F] h-full flex flex-col items-center px-12 max-md:px-4 py-10 max-md:pt-2.5 max-md:pb-5 gap-2.5 ">
             {/*Верхняя секция*/}
             <div className="rounded-2xl w-full p-10 bg-[#191919] flex flex-row justify-between items-center max-md:p-6 text-[28px]">
                 <h1 className="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[38px] uppercase  max-md:text-2xl">Success Stories</h1>
@@ -60,7 +89,7 @@ export default function Services(){
             {/*Пары карточек*/}
             <div className="rounded-2xl w-full flex flex-col gap-2.5">
                 {cards.map((card, index) => (
-                    <div key={index} className="grid grid-cols-2 gap-2.5 max-md:grid-cols-1 rounded-2xl border-4 border-[#191919] p-7.5 max-md:p-2.5">
+                    <div key={index} className="grid grid-cols-2 gap-2.5 max-md:grid-cols-1 rounded-2xl border-4 border-[#191919] p-5 max-md:p-2.5">
 
                         {/*Левая карточка*/}
                         <div className="bg-[#191919] rounded-2xl px-10 max-sm:px-6 flex flex-col justify-between transform transition duration-300 ease-in-out hover:scale-102">
@@ -94,13 +123,31 @@ export default function Services(){
                         {/*Правая карточка*/}
                         <div className="flex flex-col">
                             <div className="font-['Roboto_Flex'] font-medium text-sm uppercase flex flex-row gap-2.5 mb-2.5">
-                                <button className="px-5 py-3.5 text-[#B3B3B2] bg-[#1F1F1F] rounded-lg transform transition duration-300 ease-in-out hover:scale-110 max-sm:flex-1">{cards2[index].button_1}</button>
-                                <button className="px-5 py-3.5 text-[#0F0F0F] bg-[#CE7D63] rounded-lg transform transition duration-300 ease-in-out hover:scale-110 max-sm:flex-1">{cards2[index].button_2}</button>
-                                <button className="px-5 py-3.5 text-[#B3B3B2] bg-[#1F1F1F] rounded-lg transform transition duration-300 ease-in-out hover:scale-110 max-sm:flex-1">{cards2[index].button_3}</button>
+                                {cards2[index].buttons.map((btn, btnIndex)=>(
+                                    <button
+                                        key={btnIndex}
+                                        onClick={()=>{
+                                            const updated=[...activeTabs];
+                                            updated[index]=btnIndex;
+                                            setActiveTabs(updated);
+                                        }}
+                                        className={`px-5 py-3.5 rounded-lg transform transition duration-300 ease-in-out hover:scale-110 ${
+                                            activeTabs[index]===btnIndex
+                                                ? 'text-[#0F0F0F] bg-[#CE7D63]'
+                                                : 'text-[#B3B3B2] bg-[#1F1F1F]'
+                                        }`}
+                                    >
+                                        {btn}
+                                    </button>
+                                ))}
                             </div>
                             <div className="bg-[#191919] rounded-2xl p-[30px] max-sm:p-6 flex-1 transform transition duration-300 ease-in-out hover:scale-102">
-                                <h1 className="font-['Roboto_Mono'] font-normal text-[32px] text-[#F9EFEC] uppercase mb-2.5">{cards2[index].title}</h1>
-                                <p className="font-['Roboto_Flex'] font-normal text-[#B3B3B2]">{cards2[index].p}</p>
+                                <h1 className="font-['Roboto_Mono'] font-normal text-[32px] text-[#F9EFEC] uppercase mb-2.5">
+                                    {cards2[index].content[activeTabs[index]].title}
+                                </h1>
+                                <p className="font-['Roboto_Flex'] font-normal text-[#B3B3B2]">
+                                    {cards2[index].content[activeTabs[index]].p}
+                                </p>
                             </div>
                         </div>
 
@@ -108,7 +155,7 @@ export default function Services(){
                 ))}
             </div>
 
-            <div className=" md:hidden rounded-2xl w-full p-5 bg-[#191919] flex flex-row justify-center items-center gap-2.5">
+            <div className=" md:hidden rounded-2xl w-full p-4 bg-[#191919] flex flex-row justify-center items-center gap-2.5">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="#1F1F1F"/>
