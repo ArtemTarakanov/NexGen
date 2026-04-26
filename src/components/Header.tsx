@@ -59,7 +59,7 @@ export default function Header(){
                         <Link to="/" className={getLinkClass('/')}>Home</Link>
                         <Link to="/services" className={getLinkClass('/services')}>Services</Link>
                         <Link to="/projects" className={getLinkClass('/projects')}>Projects</Link>
-                        <Link to="#" className={getLinkClass('#')}>About</Link>
+                        <Link to="/about" className={getLinkClass('/about')}>About</Link>
                         <Link to="/careers" className={getLinkClass('/careers')}>Careers</Link>
                         <Link to="/blogs" className={getLinkClass('/blogs')}>Blogs</Link>
 

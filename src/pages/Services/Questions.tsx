@@ -56,7 +56,7 @@ export default function Questions() {
                         <div key={index} className="bg-[#191919] rounded-2xl px-6 py-5 ">
                             <button onClick={()=>Accordion(index)} className="w-full flex flex-row justify-between items-center gap-4">
                                 <span className="font-normal text-[#F9EFEC] text-base text-left">{item.questions}</span>
-                                <span className="flex-shrink-0">
+                                <span className="shrink-0">
                                     {openIndex === index ? 
                                     (<svg width="36" height="36" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="0.5" y="0.5" width="51" height="51" rx="25.5" fill="#1F1F1F"/>
