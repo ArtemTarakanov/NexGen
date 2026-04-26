@@ -5,6 +5,7 @@ import Services from "./pages/Services.tsx";
 import Projects from "./pages/Projects.tsx";
 import Careers from "./pages/Careers.tsx";
 import Blogs from "./pages/Blogs.tsx";
+import About from './pages/About.tsx';
 function App() {
 
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path = "/projects" element={<Projects/>}/>
       <Route path = "/careers" element = {<Careers/>}/>
       <Route path = "/blogs" element={<Blogs/>}/>
+      <Route path = "/about" element={<About/>}/>
     </Routes>
   )
 }
